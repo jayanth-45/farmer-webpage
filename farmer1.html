@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="farmer1.css">
+</head>
+<body>
+    <div class="background">
+        <header>
+            <button id="menu-btn">Menu</button>
+            <h1> E-Florist</h1>
+            <button id="logout-btn">logout-btn</button>
+        </header>
+        <div class="container">
+            <div class="content">
+                <div class="months" id="months-list">
+                    <ul>
+                        <li><a href="january.html">January</a></li>
+                        <li><a href="february.html">February</a></li>
+                        <li><a href="march.html">March</a></li>
+                        <li><a href="april.html">April</a></li>
+                        <li><a href="may.html">May</a></li>
+                        <li><a href="june.html">June</a></li>
+                        <li><a href="july.html">July</a></li>
+                        <li><a href="august.html">August</a></li>
+                        <li><a href="september.html">September</a></li>
+                        <li><a href="october.html">October</a></li>
+                        <li><a href="november.html">November</a></li>
+                        <li><a href="december.html">December</a></li>
+                    </ul>
+                </div>
+                <button id="toggle-months">Show Months</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="farmer1.js">
+         
+
+        // Add event listener to the logout button
+        document.getElementById("logout-btn").addEventListener("click", function() {
+            // Redirect the user to another webpage
+            window.location.href = "abc.html"; // Change "logout.html" to the URL of the logout page
+        })
+    </script>
+</body>
+</html>

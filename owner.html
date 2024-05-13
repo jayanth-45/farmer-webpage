@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flower Market Owner Portal</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  nav {
+    background-color: #eee;
+    padding: 10px 0;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+
+  a:hover {
+    color: #6ab04c;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .content-section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .content-section:hover {
+    transform: translateY(-5px);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to Flower Market Owner Portal</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#dashboard">Dashboard</a></li>
+    <li><a href="#orders">Orders</a></li>
+    <li><a href="#inventory">Inventory</a></li>
+    <li><a href="#sales">Sales</a></li>
+    <li><a href="#settings">Settings</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="dashboard" class="content-section">
+    <h2>Dashboard</h2>
+    <p>Welcome to your flower market owner dashboard. Here you can view your business overview.</p>
+  </section>
+
+  <section id="orders" class="content-section">
+    <h2>Orders</h2>
+    <p>Manage your flower orders here.</p>
+  </section>
+
+  <section id="inventory" class="content-section">
+    <h2>Inventory</h2>
+    <p>View and manage your flower inventory.</p>
+  </section>
+
+  <section id="sales" class="content-section">
+    <h2>Sales</h2>
+    <p>Track your flower sales and revenue.</p>
+  </section>
+
+  <section id="settings" class="content-section">
+    <h2>Settings</h2>
+    <p>Adjust your flower market settings here.</p>
+  </section>
+</main>
+
+<script>
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
